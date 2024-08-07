@@ -2,37 +2,117 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.link {
+  margin: 0 15px;
+  text-decoration: none;
+  color: #1890ff; /* Ant Design mavi */
+  font-weight: bold;
+  transition: color 0.2ss ease;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.link:hover {
+  color: #40a9ff; /* Hover rengini değiştir */
+}
+.input-container {
+  margin-left: auto; /* Diğer öğelerden ayrılmasını sağlar */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+input[type="text"] {
+  padding: 6px;
+  border-radius: 4px;
+  border: 2px solid #d9d9d9; /* Gri sınır rengi */
+  font-size: 14px;
+  margin-left: 20px;
+  transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus {
+  border-color: #1890ff; /* Arama kutusu fokuslandığında mavi sınır rengi */
+  outline: none;
+}
+
+
+.characters-class{
+  border: 1px solid #7d7d7d;
+  border-radius: 8px;
+  padding: 16px;
+
+  text-align: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  margin-bottom: 20px;
+  box-shadow: #7d7d7d;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.header{
+  width: 100%;
+  height: 50px;
+  background-color: rgb(38, 40, 41);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+}
+
+.link{
+  text-decoration: none;
+  font-family: arial;
+  font-weight: 300;
+  margin: 0 6px;
+  color: lightblue;
+}
+
+.favorites-count {
+  font-size: 16px;
+  color: #979797;
+  padding: 20px;
+  margin: 20px;
+}
+
+.tablo-class{
+  
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+ 
+}
+
+.detail-table{
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+
+  /* Tablo stili */
+.tablo-class .ant-table-thead > tr > th {
+  background-color: #0f64b3;
+  color: #fff;
+  font-weight: bold;
+}
+
+.tablo-class .ant-table-tbody > tr > td {
+  font-size: 1.05em;
+  color: #333;
+  font-weight: bold;
+}
+
+.tablo-class a {
+  color: #1890ff;
+  text-decoration: none;
+  
+}
+
+.tablo-class a:hover {
+  text-decoration: underline;
 }
